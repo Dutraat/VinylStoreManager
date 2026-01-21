@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EstoqueUI</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Estoque e Controle de Vendas</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="mainFrame">
+    <property name="geometry">
+     <rect>
+      <x>-3</x>
+      <y>-3</y>
+      <width>801</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(58, 91, 125);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <widget class="QFrame" name="frame_header">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>801</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(173, 174, 174);
+border-radius: 10px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <widget class="QLabel" name="label_titulo">
+      <property name="geometry">
+       <rect>
+        <x>-60</x>
+        <y>0</y>
+        <width>901</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Estoque e Controle de Vendas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_mensagem">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>110</y>
+       <width>421</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_mensagem">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+padding: 8px;
+border-radius: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Mensagem</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_fechar_msg">
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(200, 200, 200);
+    border-radius: 8px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: rgb(50, 50, 50);
+    color: rgb(200, 200, 200);
+}
+QPushButton:pressed {
+    background-color: rgb(35, 35, 35);
+    color: rgb(200, 200, 200);
+}</string>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget_estoque">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>781</width>
+       <height>591</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane {
+    background-color: rgb(173, 174, 174);
+    border: 2px solid rgb(58, 91, 125);
+    border-radius: 5px;
+}
+
+QTabBar::tab {
+    background-color: rgb(120, 120, 120);
+    color: white;
+    padding: 10px 20px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: rgb(173, 174, 174);
+    font-weight: bold;
+}
+
+QLineEdit {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(120, 120, 120);
+}
+
+QLineEdit:focus {
+    border: 2px solid rgb(58, 91, 125);
+}
+
+QComboBox {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(120, 120, 120);
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_vendas">
+      <attribute name="title">
+       <string>Controle de Vendas</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0" rowspan="2">
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_vendas">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>736</width>
+            <height>523</height>
+           </rect>
+          </property>
+          <widget class="QFrame" name="frame_vendas">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>-8</y>
+             <width>721</width>
+             <height>501</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_lista_vendas">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Histórico de Vendas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_info_vendas">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Resumo de Vendas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QTableWidget" name="tableWidget_vendas">
+              <property name="styleSheet">
+               <string notr="true">QTableWidget {
+    background-color: white;
+    border: 2px solid rgb(120, 120, 120);
+    border-radius: 5px;
+}
+
+QHeaderView::section {
+    background-color: rgb(58, 91, 125);
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+}</string>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>true</bool>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+              </property>
+              <column>
+               <property name="text">
+                <string>Data</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Disco</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Quantidade</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Valor (R$)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Cliente</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="3" column="0" rowspan="2">
+             <widget class="QFrame" name="frame_estatisticas">
+              <property name="styleSheet">
+               <string notr="true">QFrame {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+}</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_total_vendas_texto">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Total de Vendas:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_total_vendas_valor">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#0000ff;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_lucro_texto">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Lucro Total:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="label_lucro_valor">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#008f00;&quot;&gt;R$ 0,00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_discos_vendidos_texto">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Discos Vendidos:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLabel" name="label_discos_vendidos_valor">
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ff8c00;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_listagem">
+      <attribute name="title">
+       <string>Listagem de Discos</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget_discos">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>711</width>
+         <height>391</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTableWidget {
+    background-color: white;
+    border: 2px solid rgb(120, 120, 120);
+    border-radius: 5px;
+}
+
+QHeaderView::section {
+    background-color: rgb(58, 91, 125);
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+}</string>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+       </property>
+       <column>
+        <property name="text">
+         <string>Nome</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Artista</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Ano</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Gênero</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Quantidade</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Preço (R$)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Condição</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Debug">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3; /* Sombra mais fina (3px) */
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;                /* Letra menor */
+    padding: 4px 10px;              /* Menos preenchimento */
+    max-height: 25px;               /* Força o botão a ser baixinho */
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #32CD32;      /* VERDE */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;                /* Movimento menor */
+}</string>
+     </property>
+     <property name="text">
+      <string>Debug</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_voltar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3; /* Sombra mais fina (3px) */
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;                /* Letra menor */
+    padding: 4px 10px;              /* Menos preenchimento */
+    max-height: 25px;               /* Força o botão a ser baixinho */
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #32CD32;      /* VERDE */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;                /* Movimento menor */
+}</string>
+     </property>
+     <property name="text">
+      <string>Voltar</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+

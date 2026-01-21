@@ -1,0 +1,74 @@
+# INSTALL
+
+## Descreva como compilar e instalar o seu programa
+
+O nome do projeto é no padrão pf3-gXX-name, onde:
+
+- XX é o número do seu grupo
+- name é o nome do grupo
+
+Exemplos:
+
+* pf3-g01-tico
+* pf3-g02-teco
+
+
+## Passos para compilar
+
+0. arquivos iniciais na pasta rascunhos/pf3-gXX-name:
+
+* exN.cpp
+* exN.ui
+
+
+1. gerar arquivo de projeto na pasta pf3-gXX-name:
+
+qmake-qt5 -project
+
+
+2. ajustar o arquivo de projeto pf3-gXX-name.pro:
+
+vi pf3-gXX-name.pro
+
+Adicionar linha:
+QT += gui widgets sql
+l
+
+Alterar linhas, onde N é o número do exercício:
+TARGET = exN.out
+
+Se necessário, alterar:
+SOURCES += exN.cpp
+
+
+3. gerar o Makefile com:
+
+qmake-qt5 pf3-gXX-name.pro
+
+
+4. gerar biblioteca ui_exN.h e o binário exN.out com:
+
+make -f Makefile
+
+
+------------------------------------------------------
+Resumo
+
+Total 6 arquivos:
+
+1. exN.cpp (arquivo digitado manualmente)
+2. exN.ui (arquivo digitado ou criado em editor visual)
+3. pf3-gXX-name.pro (arquivo gerado pelo comando: qmake-qt5 -project)
+4. Makefile (arquivo gerado pelo comando: qmake-qt5 pf3-gXX-name.pro)
+5. ui_exN.h (arquivo gerado pelo comando: make -f Makefile)
+6. exN.out (arquivo gerado pelo comando: make -f Makefile)
+
+O arquivo _makefile_ contem a receita acima.
+
+
+------------------------------------------------------
+Exemplo de aula
+Prof. Dr. Ruben Carlo Benante
+2023-06-20
+
+

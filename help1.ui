@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help1</class>
+ <widget class="QDialog" name="Help1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>589</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ajuda</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>611</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:15px; margin-bottom:15px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:18pt; font-weight:600; color:#1e3a8a;&quot;&gt; Vinilcius Ajuda você&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:5px; margin-bottom:20px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:10pt; color:#2563eb;&quot;&gt;Management Platform&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:20px; margin-bottom:15px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:15pt; font-weight:600; color:#333333;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Contato&lt;/span&gt;&lt;br /&gt;Em caso de dúvidas ou suporte técnico, entre em contato:&lt;br /&gt;Telefone: (xx) xxxx-xxxx&lt;br /&gt;E-mail: suporte@vinylstore.com&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Sobre o Vinyl Store Manager&lt;/span&gt;&lt;br /&gt;    Aqui você pode comprar seus discos de vinil com facilidade. Trabalhamos com um catálogo completo e sempre atualizado.&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Navegação pelo Sistema&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Discos de Vinil: consulte todo o catálogo disponível.&lt;/li&gt;
+&lt;li align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Área do Cliente: cadastre-se para acompanhar pedidos, editar dados e acessar benefícios.&lt;/li&gt;
+&lt;li align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Carrinho: visualize seus itens e finalize compras com segurança.&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Desconto&lt;/span&gt;&lt;br /&gt;Use o código &amp;quot;AJUDADO PELO VINILCIUS&amp;quot; para ganhar 10% de desconto.&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:20px; margin-bottom:5px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:8pt; color:#999999;&quot;&gt;© 2025 Jamis-Kirk Group. All rights reserved.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="okButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>540</y>
+        <width>611</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+        QPushButton {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 6px 12px;
+        }
+        QPushButton:hover {
+            background-color: #34495e;
+        }
+      </string>
+      </property>
+      <property name="text">
+       <string>Enter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Debug">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>480</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+        QPushButton {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 6px 12px;
+        }
+        QPushButton:hover {
+            background-color: #34495e;
+        }
+      </string>
+      </property>
+      <property name="text">
+       <string>Debug</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

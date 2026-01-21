@@ -1,0 +1,313 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BaixaEstoque	principalui.cpp	/^bool principalui::BaixaEstoque() {$/;"	f	class:principalui
+CADASTRO_H	Cadastro.hpp	2;"	d
+CENTRALL_H	central.hpp	2;"	d
+CONTROLEDALOJA_HPP	Controledaloja.hpp	2;"	d
+Cadastro	Cadastro.cpp	/^Cadastro::Cadastro(QWidget *parent)$/;"	f	class:Cadastro
+Cadastro	Cadastro.hpp	/^class Cadastro : public QMainWindow$/;"	c
+Central	central.cpp	/^ Central::Central(QString cargo, QWidget *parent)$/;"	f	class:Central
+Central	central.hpp	/^class Central : public QMainWindow$/;"	c
+Cliente	Cadastro.hpp	/^struct Cliente {$/;"	s
+Controledaloja	Controledaloja.cpp	/^Controledaloja::Controledaloja(QWidget *parent)$/;"	f	class:Controledaloja
+Controledaloja	Controledaloja.hpp	/^class Controledaloja : public QMainWindow$/;"	c
+DEBUGMENU_HPP	debug.hpp	2;"	d
+DebugMenu	debug.cpp	/^DebugMenu::DebugMenu(QWidget *parent) :$/;"	f	class:DebugMenu
+DebugMenu	debug.hpp	/^class DebugMenu : public QDialog$/;"	c
+Dia	principalui.hpp	/^    Dia,$/;"	m	class:PeriodoVenda
+DiscoEstoque	Estoque.hpp	/^struct DiscoEstoque {$/;"	s
+ESTOQUE_H	Estoque.hpp	2;"	d
+Estoque	Estoque.cpp	/^Estoque::Estoque(QWidget *parent)$/;"	f	class:Estoque
+Estoque	Estoque.hpp	/^class Estoque : public QMainWindow$/;"	c
+FIRSTLOGIN_HPP	firstlogin.hpp	2;"	d
+GERENTE_H	Gerente.hpp	2;"	d
+Gerente	Gerente.cpp	/^Gerente::Gerente(QWidget *parent)$/;"	f	class:Gerente
+Gerente	Gerente.hpp	/^class Gerente : public QMainWindow$/;"	c
+Help1	help1.cpp	/^Help1::Help1(QWidget *parent)$/;"	f	class:Help1
+Help1	help1.hpp	/^class Help1 : public QDialog$/;"	c
+Help2	help2.cpp	/^Help2::Help2(QWidget *parent)$/;"	f	class:Help2
+Help2	help2.hpp	/^class Help2 : public QDialog$/;"	c
+MAINWINDOW_HPP	mainwindow.hpp	2;"	d
+MainWindow	mainwindow.cpp	/^MainWindow::MainWindow(QWidget *parent)$/;"	f	class:MainWindow
+MainWindow	mainwindow.hpp	/^class MainWindow : public QMainWindow$/;"	c
+ObterTotalVendas	principalui.cpp	/^double principalui::ObterTotalVendas(PeriodoVenda periodo)$/;"	f	class:principalui
+OrigemCadastro	Estoque.hpp	/^    static const int OrigemCadastro = 2;$/;"	m	class:Estoque
+OrigemCentral	Controledaloja.hpp	/^        OrigemCentral,$/;"	e	enum:Controledaloja::OrigemJanela
+OrigemCentralFunc	Estoque.hpp	/^    static const int OrigemCentralFunc = 3;$/;"	m	class:Estoque
+OrigemGerente	Controledaloja.hpp	/^        OrigemGerente$/;"	e	enum:Controledaloja::OrigemJanela
+OrigemGerente	Estoque.hpp	/^    static const int OrigemGerente = 1;$/;"	m	class:Estoque
+OrigemJanela	Controledaloja.hpp	/^    enum OrigemJanela {$/;"	g	class:Controledaloja
+PRINCIPALUI_H	principalui.hpp	2;"	d
+PeriodoVenda	principalui.hpp	/^enum class PeriodoVenda {$/;"	c
+ProdutoCarrinho	principalui.hpp	/^    struct ProdutoCarrinho {$/;"	s	class:principalui
+REGISTRO_HPP	registro.hpp	2;"	d
+RegistrarVenda	principalui.cpp	/^bool principalui::RegistrarVenda(QString numeroPedido, double valorTotal)$/;"	f	class:principalui
+SBUFF	pf3.cpp	53;"	d	file:
+Semana	principalui.hpp	/^    Semana,$/;"	m	class:PeriodoVenda
+TARGET	makefile	/^	sed -i 's\/TARGET = .*\/TARGET = pf3.out\/' pf3-james-kirk.pro$/;"	m
+Ui	Cadastro.hpp	/^namespace Ui {$/;"	n
+Ui	Controledaloja.hpp	/^namespace Ui {$/;"	n
+Ui	Estoque.hpp	/^namespace Ui {$/;"	n
+Ui	Gerente.hpp	/^namespace Ui {$/;"	n
+Ui	central.hpp	/^namespace Ui {$/;"	n
+Ui	debug.hpp	/^namespace Ui {$/;"	n
+Ui	firstlogin.hpp	/^namespace Ui { class firstloginUI; }$/;"	n
+Ui	help1.hpp	/^namespace Ui {$/;"	n
+Ui	help2.hpp	/^namespace Ui {$/;"	n
+Ui	mainwindow.hpp	/^namespace Ui { class MainWindow; }$/;"	n
+Ui	principalui.hpp	/^namespace Ui {$/;"	n
+Ui	registro.hpp	/^namespace Ui { class registro; }$/;"	n
+Venda	Estoque.hpp	/^struct Venda {$/;"	s
+Vinil	Cadastro.hpp	/^struct Vinil {$/;"	s
+_HELP1_HPP	help1.hpp	2;"	d
+_HELP2_HPP	help2.hpp	2;"	d
+adicionarProduto	principalui.cpp	/^void principalui::adicionarProduto(QString nome, double preco, int quantidadeSolicitada) {$/;"	f	class:principalui
+ano	Cadastro.hpp	/^    QString ano;$/;"	m	struct:Vinil
+ano	Estoque.hpp	/^    QString ano;$/;"	m	struct:DiscoEstoque
+ano	Gerente.hpp	/^    QString ano;$/;"	m	struct:vinil
+artista	Cadastro.hpp	/^    QString artista;$/;"	m	struct:Vinil
+artista	Estoque.hpp	/^    QString artista;$/;"	m	struct:DiscoEstoque
+artista	Gerente.hpp	/^    QString artista;$/;"	m	struct:vinil
+atualizarCarrinhoVisual	principalui.cpp	/^void principalui::atualizarCarrinhoVisual() {$/;"	f	class:principalui
+atualizarDados	Controledaloja.cpp	/^void Controledaloja::atualizarDados()$/;"	f	class:Controledaloja
+atualizarDashboardGerente	principalui.cpp	/^void principalui::atualizarDashboardGerente() {$/;"	f	class:principalui
+atualizarEstatisticasVendas	Estoque.cpp	/^void Estoque::atualizarEstatisticasVendas()$/;"	f	class:Estoque
+atualizarTabela	Estoque.cpp	/^void Estoque::atualizarTabela()$/;"	f	class:Estoque
+atualizarTabelaClientes	Cadastro.cpp	/^void Cadastro::atualizarTabelaClientes()$/;"	f	class:Cadastro
+atualizarTabelaClientes	Gerente.cpp	/^void Gerente::atualizarTabelaClientes()$/;"	f	class:Gerente
+atualizarTabelaFuncionarios	Gerente.cpp	/^void Gerente::atualizarTabelaFuncionarios()$/;"	f	class:Gerente
+atualizarTabelaVendas	Estoque.cpp	/^void Estoque::atualizarTabelaVendas()$/;"	f	class:Estoque
+atualizarTabelaVinis	Cadastro.cpp	/^void Cadastro::atualizarTabelaVinis()$/;"	f	class:Cadastro
+atualizarTabelaVinis	Gerente.cpp	/^void Gerente::atualizarTabelaVinis()$/;"	f	class:Gerente
+atualizarTotal	principalui.cpp	/^void principalui::atualizarTotal() {$/;"	f	class:principalui
+cargoUsuario	central.hpp	/^    QString cargoUsuario;$/;"	m	class:Central
+carregarDadosVendas	Estoque.cpp	/^void Estoque::carregarDadosVendas()$/;"	f	class:Estoque
+carregarEstoqueCritico	Controledaloja.cpp	/^void Controledaloja::carregarEstoqueCritico()$/;"	f	class:Controledaloja
+carregarFuncionarios	Controledaloja.cpp	/^void Controledaloja::carregarFuncionarios()$/;"	f	class:Controledaloja
+carrinho	principalui.hpp	/^    QVector<ProdutoCarrinho> carrinho;$/;"	m	class:principalui
+cep	Cadastro.hpp	/^    QString cep;$/;"	m	struct:Cliente
+cep	Gerente.hpp	/^    QString cep;$/;"	m	struct:cliente
+cep	Gerente.hpp	/^    QString cep;$/;"	m	struct:funcionario
+cliente	Estoque.hpp	/^    QString cliente;$/;"	m	struct:Venda
+cliente	Gerente.hpp	/^struct cliente {$/;"	s
+codigo	Cadastro.hpp	/^    QString codigo;$/;"	m	struct:Vinil
+codigo	Estoque.hpp	/^    QString codigo;$/;"	m	struct:DiscoEstoque
+codigo	Gerente.hpp	/^    QString codigo;$/;"	m	struct:vinil
+condicao	Cadastro.hpp	/^    QString condicao;$/;"	m	struct:Vinil
+condicao	Estoque.hpp	/^    QString condicao;$/;"	m	struct:DiscoEstoque
+condicao	Gerente.hpp	/^    QString condicao;$/;"	m	struct:vinil
+controleLoja	Gerente.hpp	/^    Controledaloja *controleLoja = nullptr;$/;"	m	class:Gerente
+cpf	Cadastro.hpp	/^    QString cpf;$/;"	m	struct:Cliente
+cpf	Gerente.hpp	/^    QString cpf;$/;"	m	struct:cliente
+cpf	Gerente.hpp	/^    QString cpf;$/;"	m	struct:funcionario
+criarTabelas	Cadastro.cpp	/^bool Cadastro::criarTabelas()$/;"	f	class:Cadastro
+criarTabelas	Gerente.cpp	/^bool Gerente::criarTabelas()$/;"	f	class:Gerente
+cupomAplicado	principalui.hpp	/^    bool cupomAplicado = false;$/;"	m	class:principalui
+data	Estoque.hpp	/^    QString data;$/;"	m	struct:Venda
+db	Cadastro.hpp	/^    QSqlDatabase db;$/;"	m	class:Cadastro
+db	Gerente.hpp	/^    QSqlDatabase db;$/;"	m	class:Gerente
+desconto	principalui.hpp	/^    double desconto = 0.0;$/;"	m	class:principalui
+disco	Estoque.hpp	/^    QString disco;$/;"	m	struct:Venda
+discos	Estoque.hpp	/^    QVector<DiscoEstoque> discos;$/;"	m	class:Estoque
+donoJaCadastrado	pf3.cpp	/^static bool donoJaCadastrado()$/;"	f	file:
+email	Cadastro.hpp	/^    QString email;$/;"	m	struct:Cliente
+email	Gerente.hpp	/^    QString email;$/;"	m	struct:cliente
+email	Gerente.hpp	/^    QString email;$/;"	m	struct:funcionario
+firstlogin	firstlogin.cpp	/^firstlogin::firstlogin(QWidget *parent)$/;"	f	class:firstlogin
+firstlogin	firstlogin.hpp	/^class firstlogin : public QMainWindow$/;"	c
+funcao	Gerente.hpp	/^    QString funcao;$/;"	m	struct:funcionario
+funcionario	Gerente.hpp	/^struct funcionario {$/;"	s
+genero	Cadastro.hpp	/^    QString genero;$/;"	m	struct:Vinil
+genero	Estoque.hpp	/^    QString genero;$/;"	m	struct:DiscoEstoque
+genero	Gerente.hpp	/^    QString genero;$/;"	m	struct:vinil
+gerente	Controledaloja.hpp	/^    Gerente *gerente = nullptr;$/;"	m	class:Controledaloja
+id	Cadastro.hpp	/^    int id = -1;$/;"	m	struct:Cliente
+id	Cadastro.hpp	/^    int id = -1;$/;"	m	struct:Vinil
+id	Gerente.hpp	/^    int id = -1;$/;"	m	struct:cliente
+id	Gerente.hpp	/^    int id = -1;$/;"	m	struct:funcionario
+id	Gerente.hpp	/^    int id = -1;$/;"	m	struct:vinil
+idEdicaoCliente	Cadastro.hpp	/^    int idEdicaoCliente = -1;$/;"	m	class:Cadastro
+idEdicaoCliente	Gerente.hpp	/^    int idEdicaoCliente = -1;$/;"	m	class:Gerente
+idEdicaoFuncionario	Gerente.hpp	/^    int idEdicaoFuncionario = -1;$/;"	m	class:Gerente
+idEdicaoVinil	Cadastro.hpp	/^    int idEdicaoVinil = -1;$/;"	m	class:Cadastro
+idEdicaoVinil	Gerente.hpp	/^    int idEdicaoVinil = -1;$/;"	m	class:Gerente
+indiceEdicao	Estoque.hpp	/^    int indiceEdicao = -1;  \/\/ Para controlar se está editandoi$/;"	m	class:Estoque
+indiceEdicaoCliente	Cadastro.hpp	/^    int indiceEdicaoCliente = -1;$/;"	m	class:Cadastro
+indiceEdicaoVinil	Cadastro.hpp	/^    int indiceEdicaoVinil = -1;$/;"	m	class:Cadastro
+iniciarBancoDeDados	Cadastro.cpp	/^bool Cadastro::iniciarBancoDeDados()$/;"	f	class:Cadastro
+iniciarBancoDeDados	Gerente.cpp	/^bool Gerente::iniciarBancoDeDados()$/;"	f	class:Gerente
+limparCamposCliente	Cadastro.cpp	/^void Cadastro::limparCamposCliente()$/;"	f	class:Cadastro
+limparCamposCliente	Gerente.cpp	/^void Gerente::limparCamposCliente()$/;"	f	class:Gerente
+limparCamposFuncionario	Gerente.cpp	/^void Gerente::limparCamposFuncionario()$/;"	f	class:Gerente
+limparCamposVinil	Cadastro.cpp	/^void Cadastro::limparCamposVinil()$/;"	f	class:Cadastro
+limparCamposVinil	Gerente.cpp	/^void Gerente::limparCamposVinil()$/;"	f	class:Gerente
+main	pf3.cpp	/^int main(int argc, char **argv)$/;"	f
+mostrarMensagem	Cadastro.cpp	/^void Cadastro::mostrarMensagem(const QString &mensagem, bool erro)$/;"	f	class:Cadastro
+mostrarMensagem	Estoque.cpp	/^void Estoque::mostrarMensagem(const QString &mensagem, bool erro)$/;"	f	class:Estoque
+mostrarMensagem	Gerente.cpp	/^void Gerente::mostrarMensagem(const QString &mensagem, bool erro)$/;"	f	class:Gerente
+nome	Cadastro.hpp	/^    QString nome;$/;"	m	struct:Cliente
+nome	Cadastro.hpp	/^    QString nome;$/;"	m	struct:Vinil
+nome	Estoque.hpp	/^    QString nome;$/;"	m	struct:DiscoEstoque
+nome	Gerente.hpp	/^    QString nome;$/;"	m	struct:cliente
+nome	Gerente.hpp	/^    QString nome;$/;"	m	struct:funcionario
+nome	Gerente.hpp	/^    QString nome;$/;"	m	struct:vinil
+nome	principalui.hpp	/^        QString nome;$/;"	m	struct:principalui::ProdutoCarrinho
+obterTicketMedio	Controledaloja.cpp	/^double Controledaloja::obterTicketMedio()$/;"	f	class:Controledaloja
+obterTotalVendasDia	Controledaloja.cpp	/^double Controledaloja::obterTotalVendasDia()$/;"	f	class:Controledaloja
+obterTotalVendasMes	Controledaloja.cpp	/^double Controledaloja::obterTotalVendasMes()$/;"	f	class:Controledaloja
+obterTotalVendasSemana	Controledaloja.cpp	/^double Controledaloja::obterTotalVendasSemana()$/;"	f	class:Controledaloja
+on_backButton_clicked	firstlogin.cpp	/^void firstlogin::on_backButton_clicked()$/;"	f	class:firstlogin
+on_backButton_clicked	mainwindow.cpp	/^void MainWindow::on_backButton_clicked()$/;"	f	class:MainWindow
+on_backButton_clicked	registro.cpp	/^void registro::on_backButton_clicked()$/;"	f	class:registro
+on_pushButton_2_clicked	mainwindow.cpp	/^void MainWindow::on_pushButton_2_clicked()$/;"	f	class:MainWindow
+on_pushButton_2_clicked	registro.cpp	/^void registro::on_pushButton_2_clicked()$/;"	f	class:registro
+on_pushButton_Backtocart_clicked	principalui.cpp	/^void principalui::on_pushButton_Backtocart_clicked()$/;"	f	class:principalui
+on_pushButton_Backtocatalog_clicked	principalui.cpp	/^void principalui::on_pushButton_Backtocatalog_clicked()$/;"	f	class:principalui
+on_pushButton_Close_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Close_clicked()$/;"	f	class:DebugMenu
+on_pushButton_ContinuarCompra_clicked	principalui.cpp	/^void principalui::on_pushButton_ContinuarCompra_clicked()$/;"	f	class:principalui
+on_pushButton_Debug_2_clicked	firstlogin.cpp	/^void firstlogin::on_pushButton_Debug_2_clicked()$/;"	f	class:firstlogin
+on_pushButton_Debug_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_Debug_clicked()$/;"	f	class:Cadastro
+on_pushButton_Debug_clicked	Controledaloja.cpp	/^void Controledaloja::on_pushButton_Debug_clicked()$/;"	f	class:Controledaloja
+on_pushButton_Debug_clicked	Estoque.cpp	/^void Estoque::on_pushButton_Debug_clicked()$/;"	f	class:Estoque
+on_pushButton_Debug_clicked	Gerente.cpp	/^void Gerente::on_pushButton_Debug_clicked()$/;"	f	class:Gerente
+on_pushButton_Debug_clicked	central.cpp	/^void Central::on_pushButton_Debug_clicked()$/;"	f	class:Central
+on_pushButton_Debug_clicked	firstlogin.cpp	/^void firstlogin::on_pushButton_Debug_clicked()$/;"	f	class:firstlogin
+on_pushButton_Debug_clicked	help1.cpp	/^void Help1::on_pushButton_Debug_clicked()$/;"	f	class:Help1
+on_pushButton_Debug_clicked	help2.cpp	/^void Help2::on_pushButton_Debug_clicked()$/;"	f	class:Help2
+on_pushButton_Debug_clicked	principalui.cpp	/^void principalui::on_pushButton_Debug_clicked()$/;"	f	class:principalui
+on_pushButton_Discos_clicked	principalui.cpp	/^void principalui::on_pushButton_Discos_clicked()$/;"	f	class:principalui
+on_pushButton_Pay_clicked	principalui.cpp	/^void principalui::on_pushButton_Pay_clicked()$/;"	f	class:principalui
+on_pushButton_RemoverSelecionado_clicked	principalui.cpp	/^void principalui::on_pushButton_RemoverSelecionado_clicked()$/;"	f	class:principalui
+on_pushButton_Tela0_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela0_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela1_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela1_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela2_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela2_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela3_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela3_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela4_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela4_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela5_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela5_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela6_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela6_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela7_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela7_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela8_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela8_clicked()$/;"	f	class:DebugMenu
+on_pushButton_Tela9_clicked	debug.cpp	/^void DebugMenu::on_pushButton_Tela9_clicked()$/;"	f	class:DebugMenu
+on_pushButton_VoltarGerente_clicked	Controledaloja.cpp	/^void Controledaloja::on_pushButton_VoltarGerente_clicked()$/;"	f	class:Controledaloja
+on_pushButton_alterar_cliente_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_alterar_cliente_clicked()$/;"	f	class:Cadastro
+on_pushButton_alterar_cliente_clicked	Gerente.cpp	/^void Gerente::on_pushButton_alterar_cliente_clicked()$/;"	f	class:Gerente
+on_pushButton_alterar_vinil_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_alterar_vinil_clicked()$/;"	f	class:Cadastro
+on_pushButton_alterar_vinil_clicked	Gerente.cpp	/^void Gerente::on_pushButton_alterar_vinil_clicked()$/;"	f	class:Gerente
+on_pushButton_cadastro_clicked	central.cpp	/^void Central::on_pushButton_cadastro_clicked()$/;"	f	class:Central
+on_pushButton_clicked	firstlogin.cpp	/^void firstlogin::on_pushButton_clicked()$/;"	f	class:firstlogin
+on_pushButton_clicked	mainwindow.cpp	/^void MainWindow::on_pushButton_clicked()$/;"	f	class:MainWindow
+on_pushButton_clicked	registro.cpp	/^void registro::on_pushButton_clicked()$/;"	f	class:registro
+on_pushButton_confirm_clicked	principalui.cpp	/^void principalui::on_pushButton_confirm_clicked()$/;"	f	class:principalui
+on_pushButton_controle_loja_clicked	Gerente.cpp	/^void Gerente::on_pushButton_controle_loja_clicked()$/;"	f	class:Gerente
+on_pushButton_controle_loja_clicked	central.cpp	/^void Central::on_pushButton_controle_loja_clicked()$/;"	f	class:Central
+on_pushButton_cupom_clicked	principalui.cpp	/^void principalui::on_pushButton_cupom_clicked()$/;"	f	class:principalui
+on_pushButton_demitir_clicked	Controledaloja.cpp	/^void Controledaloja::on_pushButton_demitir_clicked()$/;"	f	class:Controledaloja
+on_pushButton_editar_clicked	Estoque.cpp	/^void Estoque::on_pushButton_editar_clicked()$/;"	f	class:Estoque
+on_pushButton_excluir_clicked	Estoque.cpp	/^void Estoque::on_pushButton_excluir_clicked()$/;"	f	class:Estoque
+on_pushButton_excluir_cliente_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_excluir_cliente_clicked()$/;"	f	class:Cadastro
+on_pushButton_excluir_cliente_clicked	Gerente.cpp	/^void Gerente::on_pushButton_excluir_cliente_clicked()$/;"	f	class:Gerente
+on_pushButton_excluir_vinil_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_excluir_vinil_clicked()$/;"	f	class:Cadastro
+on_pushButton_excluir_vinil_clicked	Gerente.cpp	/^void Gerente::on_pushButton_excluir_vinil_clicked()$/;"	f	class:Gerente
+on_pushButton_fechar_msg_clicked	Estoque.cpp	/^void Estoque::on_pushButton_fechar_msg_clicked()$/;"	f	class:Estoque
+on_pushButton_funcionario_alterar_clicked	Gerente.cpp	/^void Gerente::on_pushButton_funcionario_alterar_clicked()$/;"	f	class:Gerente
+on_pushButton_funcionario_excluir_clicked	Gerente.cpp	/^void Gerente::on_pushButton_funcionario_excluir_clicked()$/;"	f	class:Gerente
+on_pushButton_funcionario_salvar_clicked	Gerente.cpp	/^void Gerente::on_pushButton_funcionario_salvar_clicked()$/;"	f	class:Gerente
+on_pushButton_pagina_cliente_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_pagina_cliente_clicked()$/;"	f	class:Cadastro
+on_pushButton_pagina_cliente_clicked	Gerente.cpp	/^void Gerente::on_pushButton_pagina_cliente_clicked()$/;"	f	class:Gerente
+on_pushButton_pagina_funcionario_clicked	Gerente.cpp	/^void Gerente::on_pushButton_pagina_funcionario_clicked()$/;"	f	class:Gerente
+on_pushButton_pagina_itens_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_pagina_itens_clicked()$/;"	f	class:Cadastro
+on_pushButton_pagina_itens_clicked	Gerente.cpp	/^void Gerente::on_pushButton_pagina_itens_clicked()$/;"	f	class:Gerente
+on_pushButton_pagina_vinil_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_pagina_vinil_clicked()$/;"	f	class:Cadastro
+on_pushButton_pagina_vinil_clicked	Gerente.cpp	/^void Gerente::on_pushButton_pagina_vinil_clicked()$/;"	f	class:Gerente
+on_pushButton_promover_clicked	Controledaloja.cpp	/^void Controledaloja::on_pushButton_promover_clicked()$/;"	f	class:Controledaloja
+on_pushButton_salvar_cliente_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_salvar_cliente_clicked()$/;"	f	class:Cadastro
+on_pushButton_salvar_cliente_clicked	Gerente.cpp	/^void Gerente::on_pushButton_salvar_cliente_clicked()$/;"	f	class:Gerente
+on_pushButton_salvar_vinil_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_salvar_vinil_clicked()$/;"	f	class:Cadastro
+on_pushButton_salvar_vinil_clicked	Gerente.cpp	/^void Gerente::on_pushButton_salvar_vinil_clicked()$/;"	f	class:Gerente
+on_pushButton_shopcart_clicked	principalui.cpp	/^void principalui::on_pushButton_shopcart_clicked()$/;"	f	class:principalui
+on_pushButton_tela_cliente_2_clicked	central.cpp	/^void Central::on_pushButton_tela_cliente_2_clicked()$/;"	f	class:Central
+on_pushButton_tela_cliente_clicked	central.cpp	/^void Central::on_pushButton_tela_cliente_clicked()$/;"	f	class:Central
+on_pushButton_voltar_clicked	Cadastro.cpp	/^void Cadastro::on_pushButton_voltar_clicked()$/;"	f	class:Cadastro
+on_pushButton_voltar_clicked	Estoque.cpp	/^void Estoque::on_pushButton_voltar_clicked()$/;"	f	class:Estoque
+on_pushButton_voltar_clicked	Gerente.cpp	/^void Gerente::on_pushButton_voltar_clicked()$/;"	f	class:Gerente
+on_pushButton_voltar_clicked	principalui.cpp	/^void principalui::on_pushButton_voltar_clicked()$/;"	f	class:principalui
+on_tableWidget_clientes_2_cellClicked	Gerente.cpp	/^void Gerente::on_tableWidget_clientes_2_cellClicked(int row, int column)$/;"	f	class:Gerente
+on_tableWidget_clientes_cellClicked	Cadastro.cpp	/^void Cadastro::on_tableWidget_clientes_cellClicked(int row, int column)$/;"	f	class:Cadastro
+on_tableWidget_clientes_cellClicked	Gerente.cpp	/^void Gerente::on_tableWidget_clientes_cellClicked(int row, int column)$/;"	f	class:Gerente
+on_tableWidget_vinis_cellClicked	Cadastro.cpp	/^void Cadastro::on_tableWidget_vinis_cellClicked(int row, int column)$/;"	f	class:Cadastro
+on_tableWidget_vinis_cellClicked	Gerente.cpp	/^void Gerente::on_tableWidget_vinis_cellClicked(int row, int column)$/;"	f	class:Gerente
+on_toolButton_2_clicked	mainwindow.cpp	/^void MainWindow::on_toolButton_2_clicked()$/;"	f	class:MainWindow
+on_toolButton_3_clicked	mainwindow.cpp	/^void MainWindow::on_toolButton_3_clicked()$/;"	f	class:MainWindow
+on_toolButton_clicked	principalui.cpp	/^void principalui::on_toolButton_clicked()$/;"	f	class:principalui
+openDatabase	firstlogin.cpp	/^bool firstlogin::openDatabase()$/;"	f	class:firstlogin
+openDatabase	mainwindow.cpp	/^bool MainWindow::openDatabase()$/;"	f	class:MainWindow
+openDatabase	registro.cpp	/^bool registro::openDatabase()$/;"	f	class:registro
+origem	Controledaloja.hpp	/^    OrigemJanela origem = OrigemCentral;$/;"	m	class:Controledaloja
+origem	Estoque.hpp	/^    int origem = 0;$/;"	m	class:Estoque
+override	Cadastro.hpp	/^    virtual ~Cadastro() override;$/;"	m	class:Cadastro
+override	Estoque.hpp	/^    virtual ~Estoque() override;$/;"	m	class:Estoque
+override	Gerente.hpp	/^    virtual ~Gerente() override;$/;"	m	class:Gerente
+override	firstlogin.hpp	/^   virtual ~firstlogin() override;$/;"	m	class:firstlogin
+pis	Gerente.hpp	/^    QString pis;$/;"	m	struct:funcionario
+popularTabelaDiscosNovos	principalui.cpp	/^void principalui::popularTabelaDiscosNovos() {$/;"	f	class:principalui
+popularTabelaDiscosUsados	principalui.cpp	/^void principalui::popularTabelaDiscosUsados() {$/;"	f	class:principalui
+preco	Cadastro.hpp	/^    QString preco;$/;"	m	struct:Vinil
+preco	Estoque.hpp	/^    QString preco;$/;"	m	struct:DiscoEstoque
+preco	Gerente.hpp	/^    QString preco;$/;"	m	struct:vinil
+preco	principalui.hpp	/^        double preco;$/;"	m	struct:principalui::ProdutoCarrinho
+principalui	principalui.cpp	/^principalui::principalui(QWidget *parent)$/;"	f	class:principalui
+principalui	principalui.hpp	/^class principalui : public QMainWindow$/;"	c
+quantidade	Cadastro.hpp	/^    QString quantidade;$/;"	m	struct:Vinil
+quantidade	Estoque.hpp	/^    QString quantidade;$/;"	m	struct:DiscoEstoque
+quantidade	Estoque.hpp	/^    QString quantidade;$/;"	m	struct:Venda
+quantidade	Gerente.hpp	/^    QString quantidade;$/;"	m	struct:vinil
+quantidade	principalui.hpp	/^        int quantidade;$/;"	m	struct:principalui::ProdutoCarrinho
+registro	registro.cpp	/^registro::registro(QWidget *parent)$/;"	f	class:registro
+registro	registro.hpp	/^class registro : public QMainWindow$/;"	c
+removerProduto	principalui.cpp	/^void principalui::removerProduto(int linhaSelecionada) {$/;"	f	class:principalui
+salario	Gerente.hpp	/^    QString salario;$/;"	m	struct:funcionario
+setGerente	Controledaloja.cpp	/^void Controledaloja::setGerente(Gerente *g)$/;"	f	class:Controledaloja
+setOrigem	Controledaloja.hpp	/^    void setOrigem(OrigemJanela o)     { origem = o; }$/;"	f	class:Controledaloja
+setOrigem	Estoque.cpp	/^void Estoque::setOrigem(int tipo)$/;"	f	class:Estoque
+setTipoUsuario	principalui.cpp	/^void principalui::setTipoUsuario(QString tipo)$/;"	f	class:principalui
+telefone	Cadastro.hpp	/^    QString telefone;$/;"	m	struct:Cliente
+telefone	Gerente.hpp	/^    QString telefone;$/;"	m	struct:cliente
+telefone	Gerente.hpp	/^    QString telefone;$/;"	m	struct:funcionario
+tipoUsuario	principalui.hpp	/^    QString tipoUsuario;$/;"	m	class:principalui
+togglePasswordVisibility	firstlogin.cpp	/^void firstlogin::togglePasswordVisibility()$/;"	f	class:firstlogin
+ui	Cadastro.hpp	/^    Ui::CadastroUI *ui;$/;"	m	class:Cadastro
+ui	Controledaloja.hpp	/^    Ui::Controledaloja *ui;$/;"	m	class:Controledaloja
+ui	Estoque.hpp	/^    Ui::EstoqueUI *ui;$/;"	m	class:Estoque
+ui	Gerente.hpp	/^    Ui::GerenteUI *ui;$/;"	m	class:Gerente
+ui	central.hpp	/^    Ui::Central *ui;$/;"	m	class:Central
+ui	debug.hpp	/^    Ui::DebugMenu *ui;$/;"	m	class:DebugMenu
+ui	firstlogin.hpp	/^    Ui::firstloginUI *ui;$/;"	m	class:firstlogin
+ui	help1.hpp	/^    Ui::Help1 *ui;$/;"	m	class:Help1
+ui	help2.hpp	/^    Ui::Help2 *ui;$/;"	m	class:Help2
+ui	mainwindow.hpp	/^    Ui::MainWindow *ui;$/;"	m	class:MainWindow
+ui	principalui.hpp	/^    Ui::principalui *ui;$/;"	m	class:principalui
+ui	registro.hpp	/^    Ui::registro *ui;$/;"	m	class:registro
+validarCamposCliente	Cadastro.cpp	/^bool Cadastro::validarCamposCliente()$/;"	f	class:Cadastro
+validarCamposCliente	Gerente.cpp	/^bool Gerente::validarCamposCliente()$/;"	f	class:Gerente
+validarCamposFuncionario	Gerente.cpp	/^bool Gerente::validarCamposFuncionario()$/;"	f	class:Gerente
+validarCamposVinil	Cadastro.cpp	/^bool Cadastro::validarCamposVinil()$/;"	f	class:Cadastro
+validarCamposVinil	Gerente.cpp	/^bool Gerente::validarCamposVinil()$/;"	f	class:Gerente
+valor	Estoque.hpp	/^    QString valor;$/;"	m	struct:Venda
+vendas	Estoque.hpp	/^    QVector<Venda> vendas;$/;"	m	class:Estoque
+vinil	Gerente.hpp	/^struct vinil {$/;"	s
+~Cadastro	Cadastro.cpp	/^Cadastro::~Cadastro()$/;"	f	class:Cadastro
+~Central	central.cpp	/^Central::~Central()$/;"	f	class:Central
+~Controledaloja	Controledaloja.cpp	/^Controledaloja::~Controledaloja()$/;"	f	class:Controledaloja
+~DebugMenu	debug.cpp	/^DebugMenu::~DebugMenu()$/;"	f	class:DebugMenu
+~Estoque	Estoque.cpp	/^Estoque::~Estoque()$/;"	f	class:Estoque
+~Gerente	Gerente.cpp	/^Gerente::~Gerente()$/;"	f	class:Gerente
+~Help1	help1.cpp	/^Help1::~Help1()$/;"	f	class:Help1
+~Help2	help2.cpp	/^Help2::~Help2()$/;"	f	class:Help2
+~MainWindow	mainwindow.cpp	/^MainWindow::~MainWindow()$/;"	f	class:MainWindow
+~firstlogin	firstlogin.cpp	/^firstlogin::~firstlogin()$/;"	f	class:firstlogin
+~principalui	principalui.cpp	/^principalui::~principalui()$/;"	f	class:principalui
+~registro	registro.cpp	/^registro::~registro()$/;"	f	class:registro

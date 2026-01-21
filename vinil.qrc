@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+    <file>images/eye_open.png</file>
+    <file>images/eye_close.jpg</file>
+    <file>images/vinil_logo.png</file>
+</qresource>
+</RCC>

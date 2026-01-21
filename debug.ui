@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DebugMenu</class>
+ <widget class="QDialog" name="DebugMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>403</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu de Debug</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>531</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>511</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="DebugHeader">
+        <item>
+         <layout class="QVBoxLayout" name="debheaderheader">
+          <item>
+           <widget class="QLabel" name="Titulo">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; color:#1e3a8a;&quot;&gt;Tela de Debug&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
+           <widget class="QLabel" name="Legenda">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:700; color:#8d8d8d;&quot;&gt;Acesso rápido às telas do sistema&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Close">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>330</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Fechar</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="Framebotoes">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>511</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>3</number>
+       </property>
+       <property name="midLineWidth">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>1</y>
+          <width>511</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::Box</enum>
+           </property>
+           <property name="lineWidth">
+            <number>3</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700; color:#1e3a8a;&quot;&gt;Selecione a tela que deseja acessar:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>471</width>
+          <height>109</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="Gridbotoes" rowstretch="0,0,0" columnstretch="0,0,0,0" rowminimumheight="0,0,0" columnminimumwidth="0,0,0,0">
+         <property name="sizeConstraint">
+          <enum>QLayout::SizeConstraint::SetMaximumSize</enum>
+         </property>
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>6</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>6</number>
+         </property>
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_Tela6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Primeiro Acesso</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="pushButton_Tela5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Controle da loja</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="pushButton_Tela9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Registro</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="pushButton_Tela7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Tela principal</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_Tela2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+/* Hover: passar o mouse */
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+/* Pressionado: clicado */
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+/* Desabilitado */
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Estoque</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_Tela3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Gerente</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_Tela4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Primeiro Login</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_Tela1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Cadastro</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="pushButton_Tela8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Central</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_Tela0">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 127);
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+QPushButton:hover {
+    background-color: rgb(30, 30, 160);
+    border-color: rgb(180, 180, 180);
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(20, 20, 110);
+    border-color: rgb(100, 100, 100);
+}
+
+
+QPushButton:disabled {
+    background-color: rgb(120, 120, 120);
+    color: rgb(200, 200, 200);
+    border-color: rgb(100, 100, 100);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Ajuda</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>330</y>
+         <width>351</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">
+color: rgb(153, 153, 153);</string>
+          </property>
+          <property name="text">
+           <string>© 2025 Jamis-Kirk Group. All rights reserved.</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_Close</sender>
+   <signal>clicked()</signal>
+   <receiver>DebugMenu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
+

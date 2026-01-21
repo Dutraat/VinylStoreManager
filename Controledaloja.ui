@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Controledaloja</class>
+ <widget class="QMainWindow" name="Controledaloja">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Controle da loja</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_direita">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>601</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame_direita {
+    background-color: rgb(58, 91, 125);
+    border: 2px dashed #d4af37;
+    border-radius: 15px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_principal">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>591</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(173, 174, 174);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>581</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(208, 208, 208);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_cliente">
+       <widget class="QFrame" name="frame_cliente_pagina">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>581</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <widget class="QTabWidget" name="tabWidget_EstoqueCrit">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>561</width>
+           <height>391</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Courier New</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget {
+    background-color: rgb(255, 255, 255);
+    alternate-background-color: #dbeff5;
+    border: 3px solid #000000;
+    color: #000000;
+    gridline-color: #008CBA;
+    border: 3px double #000000;
+    font-family: &quot;Courier New&quot;, Courier, monospace;
+    font-size: 11pt;
+    font-weight: bold;
+}
+QHeaderView::section {
+    background-color: #eaf6fa;
+    color: #000000;
+    padding: 6px;
+    border: 1px solid #008CBA;
+    border-bottom: 3px solid #008CBA;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+QTableWidget::item:selected {
+    background-color: #008CBA;
+    color: #ffffff;
+}</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Estoque Crítico</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_EstoqueCritico">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>571</width>
+             <height>351</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableWidget {
+    background-color: rgb(255, 255, 255);
+    alternate-background-color: #dbeff5;
+    color: #000000;
+    gridline-color: #008CBA;
+
+    font-family: &quot;Courier New&quot;, Courier, monospace;
+    font-size: 11pt;
+ ;
+}
+QHeaderView::section {
+    background-color: #eaf6fa;
+    color: #000000;
+    padding: 6px;
+    border: 1px solid #008CBA;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+QTableWidget::item:selected {
+    background-color: #008CBA;
+    color: #ffffff;
+}</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+           </property>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>New Row</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Nome</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Artista</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Ano</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Valor</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Gênero</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>qtd. estoque</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Codigo</string>
+            </property>
+           </column>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Controle de funcionarios</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_funcionarios">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>421</width>
+             <height>281</height>
+            </rect>
+           </property>
+           <property name="rowCount">
+            <number>0</number>
+           </property>
+           <column>
+            <property name="text">
+             <string>Nome</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>CPF</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>PIS</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>E-mail</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Função</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Salário</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>CEP</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Telefone</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QPushButton" name="pushButton_demitir">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>20</y>
+             <width>111</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 6px 12px;
+    margin-top: 0px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Demitir</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_promover">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>60</y>
+             <width>111</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 6px 12px;
+    margin-top: 0px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Promover</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_Name_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>501</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Georgia</family>
+       <pointsize>16</pointsize>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+     </property>
+     <property name="text">
+      <string>Controle de Loja</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>171</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(208, 208, 208);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_Debug">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>540</y>
+       <width>90</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 6px 12px;
+    margin-top: 0px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 4px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Debug</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>171</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="1" column="0" colspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_VendasDia_">
+          <property name="font">
+           <font>
+            <family>Georgia</family>
+            <pointsize>16</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Dia</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_VendasDia">
+          <property name="font">
+           <font>
+            <family>Georgia</family>
+            <pointsize>15</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-family:&quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_VendasSemana_">
+          <property name="font">
+           <font>
+            <family>Georgia</family>
+            <pointsize>16</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Semana</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_VendasSemana">
+          <property name="font">
+           <font>
+            <family>Georgia</family>
+            <pointsize>15</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-family:  &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_VendasMes_">
+          <property name="font">
+           <font>
+            <family>Georgia</family>
+            <pointsize>16</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Mês</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_VendasMes">
+          <property name="font">
+           <font>
+            <family>Georgia</family>
+            <pointsize>15</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-family:&quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_TicketMedio_">
+          <property name="font">
+           <font>
+            <family>Georgia</family>
+            <pointsize>16</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Ticket Med.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_TicketMedio">
+          <property name="font">
+           <font>
+            <family>Georgia</family>
+            <pointsize>15</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-family:&quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_Vendas">
+        <property name="font">
+         <font>
+          <family>Georgia</family>
+          <pointsize>16</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+        </property>
+        <property name="text">
+         <string>VENDAS</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButton_VoltarGerente">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>470</y>
+       <width>90</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 6px 12px;
+    margin-top: 0px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 4px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Voltar</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GerenteUI</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>813</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gerenciamento</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frame_esquerda">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(58, 91, 125);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QToolBox" name="toolBox">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>191</width>
+         <height>321</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QToolBox {
+
+    border: none;
+}
+
+
+QToolBox::tab {
+    background-color: #f0f0f0;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 12pt;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 15px;
+    margin-bottom: 4px;
+}
+
+QToolBox::tab:hover {
+    background-color: #ffffff;
+    border-color: #ffd700;
+}
+
+QToolBox::tab:selected {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    font-style: italic;
+}</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>191</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Cadastros</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_pagina_cliente">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>30</y>
+           <width>191</width>
+           <height>29</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 5px 10px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Cliente</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_pagina_vinil">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>78</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 5px 10px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Discos de vinil</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_pagina_funcionario">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>140</y>
+           <width>191</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 5px 10px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Funcionários</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_estoque">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>191</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Vendas</string>
+        </attribute>
+        <widget class="QPushButton" name="pushButton_pagina_itens">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>90</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 5px 10px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Controle de vendas</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_controle_loja">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>160</y>
+           <width>191</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 5px 10px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 1px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Controle da loja</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Debug">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>550</y>
+         <width>171</width>
+         <height>36</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3; /* Sombra mais fina (3px) */
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;                /* Letra menor */
+    padding: 4px 10px;              /* Menos preenchimento */
+    max-height: 25px;               /* Força o botão a ser baixinho */
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #32CD32;      /* VERDE */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;                /* Movimento menor */
+}</string>
+       </property>
+       <property name="text">
+        <string>Debug</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_voltar">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>490</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 4px solid #0077b3;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 5px 10px;
+}
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 4px solid #0099cc;
+}
+QPushButton:pressed {
+    background-color: #0077b3;
+    border-bottom: 0px solid transparent;
+    margin-top: 4px;
+    padding-bottom: 1px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Voltar</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_direita">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_direita{
+border: 2px dashed #d4af37;
+	background-color: rgb(58, 91, 125);
+    border-radius: 15px;
+    padding: 10px;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_principal">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>70</y>
+         <width>561</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: rgb(173, 174, 174);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QStackedWidget" name="stackedWidget_paginas_funcionario">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>531</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_cliente">
+         <widget class="QFrame" name="frame_cliente_pagina">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>561</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>80</y>
+             <width>521</width>
+             <height>391</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QTabWidget::pane {
+    border: 2px dashed #d4af37;
+	background-color: rgb(181, 217, 234);
+    border-radius: 10px;
+}
+
+QTabWidget::tab-bar {
+    left: 10px;
+}
+
+
+
+QTabBar::tab:hover {
+    background-color: #505050;
+    color: #87CEFA;
+}
+
+
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab">
+            <attribute name="title">
+             <string>Cadastro Clientes</string>
+            </attribute>
+            <widget class="QFrame" name="frame_cad_cliente">
+             <property name="geometry">
+              <rect>
+               <x>-10</x>
+               <y>20</y>
+               <width>521</width>
+               <height>161</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color: rgb(255, 255, 255);}
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0" colspan="3">
+               <widget class="QLineEdit" name="lineEdit_nome_2">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nome</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="lineEdit_CEP">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>CEP</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLineEdit" name="lineEdit_Telefone">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Telefone</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="3">
+               <widget class="QLineEdit" name="lineEdit_E_mail_2">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>E-mail</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLineEdit" name="lineEdit_CPF">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>CPF</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QPushButton" name="pushButton_salvar_cliente">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3; /* Sombra mais fina (3px) */
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;                /* Letra menor */
+    padding: 4px 10px;              /* Menos preenchimento */
+    max-height: 25px;               /* Força o botão a ser baixinho */
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #32CD32;      /* VERDE */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;                /* Movimento menor */
+}</string>
+                </property>
+                <property name="text">
+                 <string>salvar</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tab_2">
+            <attribute name="title">
+             <string>Lista de Clientes</string>
+            </attribute>
+            <widget class="QTableWidget" name="tableWidget_clientes">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>20</y>
+               <width>401</width>
+               <height>281</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="rowCount">
+              <number>0</number>
+             </property>
+             <column>
+              <property name="text">
+               <string>Nome</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>CPF</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>E-mail</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>CEP</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Telefone</string>
+              </property>
+             </column>
+            </widget>
+            <widget class="QPushButton" name="pushButton_alterar_cliente">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>48</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3;
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 4px 10px;
+    max-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #FFD700;      /* DOURADO */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Alterar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_excluir_cliente">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>98</y>
+               <width>91</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3;
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 4px 10px;
+    max-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #FF6347;      /* VERMELHO */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Excluir</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>491</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 32pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Clientes&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QFrame" name="frame_cliente_pagina_funcionario">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>561</width>
+            <height>511</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <widget class="QTabWidget" name="tabWidget_funcionario">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>80</y>
+             <width>521</width>
+             <height>391</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTabWidget::pane {
+    border: 2px dashed #d4af37;
+	background-color: rgb(181, 217, 234);
+    border-radius: 10px;
+}
+
+QTabWidget::tab-bar {
+    left: 10px;
+}
+
+
+
+QTabBar::tab:hover {
+    background-color: #505050;
+    color: #87CEFA;
+}
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab_5">
+            <attribute name="title">
+             <string>Cadastro Funcionário</string>
+            </attribute>
+            <widget class="QFrame" name="frame_funcionario_cad">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>511</width>
+               <height>201</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color: rgb(255, 255, 255);}
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="2" column="0" rowspan="3" colspan="2">
+               <widget class="QComboBox" name="comboBox_funcionario_funcao">
+                <property name="styleSheet">
+                 <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #333333;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+
+QComboBox:hover {
+    border: 2px solid #ffd700;
+}
+
+QComboBox:on {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left-width: 1px;
+    border-left-color: #d4af37;
+    border-left-style: solid;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #f0f0f0;
+}
+
+
+QComboBox QAbstractItemView {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    selection-background-color: #d4af37;
+    selection-color: #000000;
+    outline: none;
+}</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Função</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Gerente</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Organizador de Estoque</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Caixa</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Supervisor</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QLineEdit" name="lineEdit_Funcionario_cpf">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>CPF</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2" rowspan="2" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_funcionario_telefone">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Telefone</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="3">
+               <widget class="QLineEdit" name="lineEdit_funcionario_nome">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nome</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="lineEdit_funcionario_pis">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>PIS</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_funcionario_cep">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>CEP</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="3">
+               <widget class="QLineEdit" name="lineEdit_funcionario_email">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>E-mail</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QPushButton" name="pushButton_funcionario_salvar">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3; /* Sombra mais fina (3px) */
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;                /* Letra menor */
+    padding: 4px 10px;              /* Menos preenchimento */
+    max-height: 25px;               /* Força o botão a ser baixinho */
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #32CD32;      /* VERDE */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;                /* Movimento menor */
+}</string>
+                </property>
+                <property name="text">
+                 <string>salvar</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_E_mail_4">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Salário</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tab_6">
+            <attribute name="title">
+             <string>Lista de Funcionário</string>
+            </attribute>
+            <widget class="QTableWidget" name="tableWidget_clientes_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>20</y>
+               <width>411</width>
+               <height>301</height>
+              </rect>
+             </property>
+             <property name="rowCount">
+              <number>0</number>
+             </property>
+             <column>
+              <property name="text">
+               <string>Nome</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>CPF</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>PIS</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>E-mail</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Função</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Salário</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>CEP</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Telefone</string>
+              </property>
+             </column>
+            </widget>
+            <widget class="QPushButton" name="pushButton_funcionario_alterar">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>40</y>
+               <width>81</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3;
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 4px 10px;
+    max-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #FFD700;      /* DOURADO */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Alterar</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_funcionario_excluir">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>90</y>
+               <width>81</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3;
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 4px 10px;
+    max-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #FF6347;      /* VERMELHO */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Excluir</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_funcionario">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>19</y>
+             <width>381</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 32pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;Funcionários&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_discos_vinil">
+         <widget class="QFrame" name="frame_Cadastro_Disco_vinil">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>541</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>491</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: &quot;Georgia&quot;, &quot;Times New Roman&quot;, serif;
+    font-size: 32pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+}</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;Discos de vinil&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QTabWidget" name="tabWidget_discos_vinil">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>80</y>
+             <width>521</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QTabWidget::pane {
+    border: 2px dashed #d4af37;
+	background-color: rgb(181, 217, 234);
+    border-radius: 10px;
+}
+
+QTabWidget::tab-bar {
+    left: 10px;
+}
+
+QTabBar::tab:hover {
+    background-color: #505050;
+    color: #87CEFA;
+}
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab_3">
+            <attribute name="title">
+             <string>Cadastrar discos de vinil</string>
+            </attribute>
+            <widget class="QFrame" name="frame_cadastro_discos">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>521</width>
+               <height>195</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color: rgb(255, 255, 255);}
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="2" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_disco_ano">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;      /* Fundo Creme */
+    color: #000000;                 /* Texto Preto */
+    border: 2px solid #d4af37;      /* Borda Dourada Sólida */
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;      /* Borda brilha mais quando clica */
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Ano</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3" colspan="2">
+               <widget class="QComboBox" name="comboBox_condicao_discos">
+                <property name="styleSheet">
+                 <string notr="true">QComboBox {
+    background-color: #fffdf5;
+    color: #333333;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+
+QComboBox:hover {
+    border: 2px solid #ffd700;
+}
+
+QComboBox:on {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left-width: 1px;
+    border-left-color: #d4af37;
+    border-left-style: solid;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #f0f0f0;
+}
+
+
+QComboBox QAbstractItemView {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    selection-background-color: #d4af37;
+    selection-color: #000000;
+    outline: none;
+}</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Condição</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Novo</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Usado</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="lineEdit_disco_preco">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;      /* Fundo Creme */
+    color: #000000;                 /* Texto Preto */
+    border: 2px solid #d4af37;      /* Borda Dourada Sólida */
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;      /* Borda brilha mais quando clica */
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Preço(R$)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLineEdit" name="lineEdit_disco_codigo">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;      /* Fundo Creme */
+    color: #000000;                 /* Texto Preto */
+    border: 2px solid #d4af37;      /* Borda Dourada Sólida */
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;      /* Borda brilha mais quando clica */
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Código</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_Nome_artistas">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;      /* Fundo Creme */
+    color: #000000;                 /* Texto Preto */
+    border: 2px solid #d4af37;      /* Borda Dourada Sólida */
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;      /* Borda brilha mais quando clica */
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string> Artista(s)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2" colspan="3">
+               <widget class="QComboBox" name="comboBox_Genero_discos">
+                <property name="styleSheet">
+                 <string notr="true">
+QComboBox {
+    background-color: #fffdf5;
+    color: #333333;
+    border: 2px solid #d4af37;
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+
+QComboBox:hover {
+    border: 2px solid #ffd700;
+}
+
+QComboBox:on {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left-width: 1px;
+    border-left-color: #d4af37;
+    border-left-style: solid;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #f0f0f0;
+}
+
+
+QComboBox QAbstractItemView {
+    background-color: #fffdf5;
+    color: #000000;
+    border: 2px solid #d4af37;
+    selection-background-color: #d4af37;
+    selection-color: #000000;
+    outline: none;
+}</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Gênero musical</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Rock</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Pop</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Jazz</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>MPB</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Clássico</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Eletrônico</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Rap</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Latino</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Trilhas Sonoras</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Blues</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="1" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_disco_quantidade">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;      /* Fundo Creme */
+    color: #000000;                 /* Texto Preto */
+    border: 2px solid #d4af37;      /* Borda Dourada Sólida */
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;      /* Borda brilha mais quando clica */
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Quant. Estoque</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_nome_do_disco">
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+    background-color: #fffdf5;      /* Fundo Creme */
+    color: #000000;                 /* Texto Preto */
+    border: 2px solid #d4af37;      /* Borda Dourada Sólida */
+    border-radius: 6px;
+    font-family: &quot;Courier New&quot;;
+    font-size: 11pt;
+    padding: 4px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffd700;      /* Borda brilha mais quando clica */
+    background-color: #ffffff;
+}</string>
+                </property>
+                <property name="inputMask">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Nome do disco </string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QPushButton" name="pushButton_salvar_vinil">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3; /* Sombra mais fina (3px) */
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;                /* Letra menor */
+    padding: 4px 10px;              /* Menos preenchimento */
+    max-height: 25px;               /* Força o botão a ser baixinho */
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #32CD32;      /* VERDE */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;                /* Movimento menor */
+}</string>
+                </property>
+                <property name="text">
+                 <string>Salvar</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tab_4">
+            <attribute name="title">
+             <string>Listagem dos discos</string>
+            </attribute>
+            <widget class="QTableWidget" name="tableWidget_vinis">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>411</width>
+               <height>281</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <column>
+              <property name="text">
+               <string>Nome do disco</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Gêneros musical</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Artistas(s)</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Ano</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Código</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Condição</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Preço(R$)</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Quant. Estoque</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+             </column>
+            </widget>
+            <widget class="QToolButton" name="help1">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>310</y>
+               <width>31</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>?</string>
+             </property>
+             <property name="icon">
+              <iconset theme="QIcon::ThemeIcon::HelpFaq"/>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_excluir_vinil">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>90</y>
+               <width>93</width>
+               <height>29</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3;
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 4px 10px;
+    max-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #FF6347;      /* VERMELHO */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Excluir</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_alterar_vinil">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>40</y>
+               <width>93</width>
+               <height>29</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+QPushButton {
+    background-color: #87CEFA;
+    color: #000000;
+    border: none;
+    border-bottom: 3px solid #0077b3;
+    border-radius: 4px;
+    font-family: &quot;Courier New&quot;;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 4px 10px;
+    max-height: 25px;
+}
+
+QPushButton:hover {
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #0099cc;
+}
+
+QPushButton:pressed {
+    background-color: #FFD700;      /* DOURADO */
+    border-bottom: 0px solid transparent;
+    margin-top: 3px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Alterar</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+

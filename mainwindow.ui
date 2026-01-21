@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Primeiro Acesso - Login</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>781</width>
+         <height>850</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="mainFrame">
+          <property name="minimumSize">
+           <size>
+            <width>780</width>
+            <height>850</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame#mainFrame {
+    background-color: white;
+}
+
+QLineEdit {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 11pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: white;
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2563eb;
+}
+
+QLineEdit:hover {
+    border: 2px solid #cbd5e1;
+}
+
+QPushButton#registerButton {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    font-size: 11pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-radius: 8px;
+    padding: 12px;
+    min-height: 45px;
+}
+
+QPushButton#registerButton:hover {
+    background-color: #1e3a8a;
+}
+
+QPushButton#registerButton:pressed {
+    background-color: #1e40af;
+}
+
+QPushButton#backButton {
+    background-color: transparent;
+    color: #64748b;
+    font-size: 10pt;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border: none;
+    padding: 8px;
+}
+
+QPushButton#backButton:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+</string>
+          </property>
+          <widget class="QLabel" name="titleLabel">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>20</y>
+             <width>400</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:16pt; font-weight:600; color:#1e3a8a;&quot;&gt;Jamis-Kirk Group Software&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="subtitleLabel">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>60</y>
+             <width>200</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:9pt; color:#2563eb;&quot;&gt;Management Platform&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="welcomeLabel">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>95</y>
+             <width>300</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:13pt; font-weight:600; color:#333333;&quot;&gt;Complete Your Registration&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="instructionLabel">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>128</y>
+             <width>300</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:9pt; color:#555555;&quot;&gt;Fill in the information below to access the system&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="nameLabel">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>180</y>
+             <width>91</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:9pt; font-weight:600; color:#333333;&quot;&gt;Full Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="nameLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>210</y>
+             <width>511</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>Enter your full name</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="emailLabel">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>280</y>
+             <width>41</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:9pt; font-weight:600; color:#333333;&quot;&gt;Email&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="emailLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>310</y>
+             <width>511</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="placeholderText">
+            <string>your@email.com</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="passwordLabel">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>380</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:9pt; font-weight:600; color:#333333;&quot;&gt;Password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="passwordLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>410</y>
+             <width>460</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::EchoMode::Normal</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Create a secure password</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="confirmPasswordLabel">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>480</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:9pt; font-weight:600; color:#333333;&quot;&gt;Confirm Password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="confirmPasswordLineEdit">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>510</y>
+             <width>460</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::EchoMode::Normal</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Enter the password again</string>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="toolButton_2">
+           <property name="geometry">
+            <rect>
+             <x>610</x>
+             <y>510</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>👁</string>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="toolButton_3">
+           <property name="geometry">
+            <rect>
+             <x>610</x>
+             <y>410</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>👁</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>610</y>
+             <width>240</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 127);
+color: white;
+font-weight: bold;
+font-size: 11pt;
+font-family: 'Segoe UI', Arial, sans-serif;
+border-radius: 8px;
+padding: 12px;
+</string>
+           </property>
+           <property name="text">
+            <string>Create Account</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="geometry">
+            <rect>
+             <x>640</x>
+             <y>610</y>
+             <width>120</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 127);
+color: white;
+font-weight: bold;
+font-size: 11pt;
+font-family: 'Segoe UI', Arial, sans-serif;
+border-radius: 8px;
+padding: 12px;
+</string>
+           </property>
+           <property name="text">
+            <string>Debug</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="footerLabel">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>770</y>
+             <width>300</width>
+             <height>15</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,Arial,sans-serif'; font-size:7pt; color:#999999;&quot;&gt;© 2025 Jamis-Kirk Group. All rights reserved.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
