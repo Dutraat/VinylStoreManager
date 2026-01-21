@@ -1,84 +1,95 @@
 # Vinilcius
 
-> **Projeto Final de Programação 3** > **Professor:** Ruben Carlo Benante
-> **Instituição:** Escola Politécnica de Pernambuco (POLI/UPE)
+> **Final Project – Programming 3**  
+> **Professor:** Ruben Carlo Benante  
+> **Institution:** Polytechnic School of Pernambuco (POLI/UPE)
 
-## Sobre o Projeto
+## About the Project
 
-O **Vinilcius** é uma aplicação Desktop desenvolvida em **C++** utilizando o framework **Qt**, projetada para gerenciar integralmente uma loja de discos de vinil.
+**Vinilcius** is a desktop application developed in **C++** using the **Qt Framework**, designed to fully manage a vinyl record store.
 
-O sistema simula um ambiente de vendas, permitindo a comercialização de discos (novos e usados) e oferecendo interfaces distintas para **Clientes** e **Funcionários/Administradores**, garantindo segurança e organização dos dados através de um banco de dados relacional.
+The system simulates a sales environment, allowing the commercialization of vinyl records
+(new and used) and providing distinct interfaces for **Customers** and
+**Employees/Administrators**, ensuring data security and organization through a
+relational database.
 
-## Usuarios Para Teste
-
-* Cliente
-
-- Usuario: caio@gmail.com
-- Senha/CPF: 16964010427
-
-* Funcionário
-
-- Usuario: fab@vinilcius.com
-- Senha/CPF:6655987413
-
-* Gerente
-
-- usuário: Rodri@vinilcius.com
-- Senha/CPF: 71393581412
-
-* Adm Software - Primeiro Registro
-
-- Usuário: Registro liberado com qualquer e-mail.
-- Senha: (*****)
-- Senha será definada pelo Adm do Software, em seu primeiro login.
-
-
-## Tecnologias Utilizadas
-
-* **Linguagem:** C++
-* **Interface Gráfica:** Qt Framework (Qt Designer)
-* **Banco de Dados:** SQLite
-* **IDE Recomendada:** Qt Creator
-
-## ⚙️ Arquitetura e Modelagem
-
-O projeto foi estruturado pensando na separação de responsabilidades e persistência de dados.
-
-### Banco de Dados (SQLite)
-O sistema conta com um banco de dados composto pelas seguintes tabelas principais:
-
-* `TB_USUARIOS`: Tabela base para login e autenticação.
-* `TB_CLIENTES`: Dados pessoais dos compradores.
-* `TB_FUNCIONARIOS`: Dados da equipe administrativa.
-* `TB_DISCOS`: Catálogo de produtos (inclui flag para Novo/Usado, Gênero, Artista).
-* `TB_ESTOQUE`: Controle quantitativo dos discos.
-* `TB_VENDAS`: Registro das transações efetuadas.
-
-## Funcionalidades
-
-O sistema possui controle de acesso via Login, direcionando o usuário para a tela correta baseada no seu nível de permissão.
-
-### Módulo do Cliente
-* **Visualização de Catálogo:** Navegação pelos discos disponíveis.
-* **Filtros:** Busca por discos novos ou usados.
-* **Carrinho de Compras:** Adição e remoção de itens antes de fechar o pedido.
-
-### Módulo Administrativo (Funcionário)
-* **Gestão de Discos:** Cadastrar novos títulos, editar preços e remover itens do catálogo.
-* **Gestão de Estoque:** Dar baixa ou adicionar unidades.
-* **Gestão de Pessoas:** Cadastrar e remover outros funcionários e visualizar lista de clientes.
-* **Dashboard:** Visualização de informações úteis (Relatórios de vendas, itens mais vendidos, etc).
-
-## Autores
-
-* Gabriel Dutra Chaves           | <gdc1@poli.br>  | @dutraat
-* Vinicius Magalhaes De Medeiros | <vmm1@poli.br>  | @Viniciusmedeiros1
-* Juliana Silva Fonseca Carneiro | <jsfc1@poli.br> | @juliana373217
-* Anthony Lucas Dos Santos Silva | <alss1@poli.br> | @Anthonyldss
-* Diego Nascimento Dos Santos    | <dns@poli.br>   | @Dinego05
-* Dennis Miller Fidelis Da Silva | <dmfs@poli.br>  | @dmfdsilva
-* Igor Guimaraes Monteiro        | <igm1@poli.br>  | @igm22
-* Anne Luiza Assuncao Freire     | <alaf@poli.br>  | @AnneLuiza
-* Christian Viana Tomaz          | <cvt@poli.br>   | @christianvtomaz
 ---
 
+## Test Users
+
+### Customer
+- **User:** caio@gmail.com  
+- **Password / CPF:** 16964010427  
+
+### Employee
+- **User:** fab@vinilcius.com  
+- **Password / CPF:** 6655987413  
+
+### Manager
+- **User:** Rodri@vinilcius.com  
+- **Password / CPF:** 71393581412  
+
+### Software Admin – First Registration
+- **User:** Registration allowed with any email  
+- **Password:** (*****)
+- The password will be defined by the Software Admin during the first login.
+
+---
+
+## Technologies Used
+
+- **Language:** C++
+- **Graphical Interface:** Qt Framework (Qt Designer)
+- **Database:** SQLite
+- **Recommended IDE:** Qt Creator
+
+---
+
+## ⚙️ Architecture and Data Modeling
+
+The project was structured with a focus on separation of responsibilities and data persistence.
+
+### Database (SQLite)
+
+The system uses a relational database composed of the following main tables:
+
+- `TB_USERS`: Base table for login and authentication  
+- `TB_CUSTOMERS`: Personal data of buyers  
+- `TB_EMPLOYEES`: Administrative staff data  
+- `TB_RECORDS`: Product catalog (includes New/Used flag, Genre, Artist)  
+- `TB_STOCK`: Inventory control of records  
+- `TB_SALES`: Record of completed transactions  
+
+---
+
+## Features
+
+The system includes an access control mechanism via login, redirecting users to the
+appropriate interface based on their permission level.
+
+### Customer Module
+- **Catalog Browsing:** View available vinyl records  
+- **Filters:** Search for new or used records  
+- **Shopping Cart:** Add and remove items before checkout  
+
+### Administrative Module (Employee)
+- **Record Management:** Register new titles, edit prices, and remove items  
+- **Stock Management:** Increase or decrease inventory quantities  
+- **People Management:** Register and remove employees and view customer lists  
+- **Dashboard:** View useful information (sales reports, best-selling items, etc.)
+
+---
+
+## Authors
+
+- Gabriel Dutra Chaves           | <gdc1@poli.br>  | @dutraat  
+- Vinicius Magalhães de Medeiros | <vmm1@poli.br>  | @Viniciusmedeiros1  
+- Juliana Silva Fonseca Carneiro | <jsfc1@poli.br> | @juliana373217  
+- Anthony Lucas dos Santos Silva | <alss1@poli.br> | @Anthonyldss  
+- Diego Nascimento dos Santos    | <dns@poli.br>   | @Dinego05  
+- Dennis Miller Fidelis da Silva | <dmfs@poli.br>  | @dmfdsilva  
+- Igor Guimarães Monteiro        | <igm1@poli.br>  | @igm22  
+- Anne Luiza Assunção Freire     | <alaf@poli.br>  | @AnneLuiza  
+- Christian Viana Tomaz          | <cvt@poli.br>   | @christianvtomaz  
+
+---
